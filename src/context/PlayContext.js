@@ -1,5 +1,6 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 import axios from 'axios';
+import UrlContext from './UrlContext';
 
 const PlayContext = createContext({
     computerMove: null,
@@ -11,11 +12,12 @@ export const PlayContextProvider = ({ children }) => {
     const [computerMove, setComputerMove] = useState();
     const [playerMove, setPlayerMove] = useState();
     const [results, setResults] = useState([]);
+    const { url } = useContext(UrlContext);
     
     const onMoveSelected = async id => {
         setPlayerMove(id);
         setComputerMove(null);
-        const response = await axios.post('http://127.0.0.1:5000/play', {
+        const response = await axios.post(`${url}/play`, {
             player: id
         }, {
             headers: {

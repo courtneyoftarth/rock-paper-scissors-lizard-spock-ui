@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Credits from './Credits';
 import Score from './Score';
 import PlayArea from './PlayArea';
+import UrlPicker from './UrlPicker';
 
 const PageWrapper = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -25,6 +26,7 @@ const Page = () => (
         </Centered>
         <PlayArea />
         <Score />
+        <UrlPicker />
         <Credits />
     </PageWrapper>
 );
