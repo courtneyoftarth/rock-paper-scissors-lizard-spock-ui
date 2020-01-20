@@ -1,8 +1,8 @@
 import React from 'react';
-import { PlayContextProvider } from './context/PlayContext';
-import { MovesContextProvider } from './context/MovesContext';
-import { UrlContextProvider } from './context/UrlContext';
-import Page from './component/Page';
+import { PlayContextProvider } from '../context/PlayContext';
+import { MovesContextProvider } from '../context/MovesContext';
+import { UrlContextProvider } from '../context/UrlContext';
+import Page from './Page';
 
 function App() {
   return (
