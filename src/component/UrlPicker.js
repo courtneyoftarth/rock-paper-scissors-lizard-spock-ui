@@ -36,18 +36,22 @@ const InputArea = styled.div`
     }
 `;
 
+const Warning = styled.p`
+    color: red;
+`;
+
 const UrlPicker = () => {
     const { setUrl, url } = useContext(UrlContext);
     const [value, setValue] = useState(url);
-
-    const onClick = () => setUrl(value);
+    const showWarning = value && value.endsWith("/");
     return (
         <>
             <h2>Game service url</h2>
             <InputArea>
-                <Input value={value} onChange={setValue}/>
-                <Button onClick={onClick}>Save</Button>
+                <Input value={value} onChange={event => setValue(event.target.value)}/>
+                <Button onClick={() => setUrl(value)}>Save</Button>
             </InputArea>
+            {showWarning && <Warning>Please delete trailing slash from url</Warning>}
         </>
     );
 };
