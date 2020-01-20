@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Rock Paper Scissors Lizard Spock!</h1>
+      <div>
+        <h2>Credits</h2>
+        Pictures taken from
+        <ul>
+          <li><a alt="Lizard" href="https://www.istockphoto.com/vector/friendly-green-iguana-in-flat-style-vector-gm862153016-142888289">Lizard</a></li>
+          <li><a alt="Spock" href="https://www.pinclipart.com/pindetail/ohwhox_star-trek-spock-fallout-star-trek-spock-fallout/">Spock</a></li>
+        </ul>
+      </div>
     </div>
   );
 }
