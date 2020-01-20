@@ -7,17 +7,19 @@ import scissors from '../../images/scissors.jpg';
 import lizard from '../../images/lizard.jpg';
 import spock from '../../images/spock.png';
 
-
-const ButtonList = styled.ul`
-    list-style-type: none;
-`;
-
 const MoveButton = styled.img`
     border-radius: 50px;
     box-shadow: ${props => props.isSelected ? 'darkgoldenrod 0px 0px 10px 1px' : ''};
     height: 10vh;
     margin: 10px;
     width: 10vh;
+
+    ${props => props.isClickable ? `
+        :hover {
+            box-shadow: darkgreen 0px 0px 10px 1px;
+            cursor: pointer;
+        }
+    ` : ''}
 `;
 
 const urls = {
@@ -32,9 +34,7 @@ const MovePicker = ({ onSelect, selected }) => {
     const { moves } = useContext(MovesContext);
 
     return (
-        <ButtonList>
-            { moves.map(({ id, name }) => <li key={id}><MoveButton src={urls[name]} isSelected={selected === id} onClick={onSelect ? () => onSelect(id) : (() => {})} /></li>)}
-        </ButtonList>
+        moves.map(({ id, name }) => <MoveButton src={urls[name]} key={id} isSelected={selected === id} isClickable={!!onSelect} onClick={onSelect ? () => onSelect(id) : (() => {})} />)
     );
 };
 

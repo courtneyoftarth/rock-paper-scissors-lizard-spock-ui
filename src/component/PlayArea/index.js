@@ -4,8 +4,7 @@ import MovePicker from './MovePicker';
 import PlayContext from '../../context/PlayContext';
 
 const StyleWrapper = styled.div`
-    display: flex;
-    justify-content: space-around;
+
 `;
 
 const PlayArea = () => {
