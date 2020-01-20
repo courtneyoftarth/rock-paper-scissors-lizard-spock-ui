@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import GameContext from '../context/GameContext';
+import PlayContext from '../context/PlayContext';
 import styled from 'styled-components';
 
 const ScoreWrapper = styled.div`
@@ -7,7 +7,7 @@ const ScoreWrapper = styled.div`
 `;
 
 const Score = () => {
-    const { results } = useContext(GameContext);
+    const { results } = useContext(PlayContext);
     const wins = results.filter(result => result === "win").length;
     const ties = results.filter(result => result === "tie").length;
     const losses = results.filter(result => result === "lose").length;

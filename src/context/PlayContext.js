@@ -1,15 +1,15 @@
 import React, { createContext, useState } from 'react';
 import axios from 'axios';
 
-const GameContext = createContext({
-    computerMove: 4,
+const PlayContext = createContext({
+    computerMove: null,
     onMoveSelected: () => {},
-    playerMove: 2
+    playerMove: null
 });
 
-export const GameContextProvider = ({ children }) => {
-    const [computerMove, setComputerMove] = useState(4);
-    const [playerMove, setPlayerMove] = useState(2);
+export const PlayContextProvider = ({ children }) => {
+    const [computerMove, setComputerMove] = useState();
+    const [playerMove, setPlayerMove] = useState();
     const [results, setResults] = useState([]);
     
     const onMoveSelected = async id => {
@@ -40,7 +40,7 @@ export const GameContextProvider = ({ children }) => {
         playerMove,
         results
     };
-    return <GameContext.Provider value={value}>{children}</GameContext.Provider>;
+    return <PlayContext.Provider value={value}>{children}</PlayContext.Provider>;
 };
 
-export default GameContext;
+export default PlayContext;

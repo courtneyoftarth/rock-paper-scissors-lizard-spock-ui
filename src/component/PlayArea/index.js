@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import MovePicker from './MovePicker';
-import GameContext from '../../context/GameContext';
+import PlayContext from '../../context/PlayContext';
 
 const StyleWrapper = styled.div`
     display: flex;
@@ -9,7 +9,7 @@ const StyleWrapper = styled.div`
 `;
 
 const PlayArea = () => {
-    const { computerMove, onMoveSelected, playerMove } = useContext(GameContext);
+    const { computerMove, onMoveSelected, playerMove } = useContext(PlayContext);
     return (
         <StyleWrapper>
             <div>

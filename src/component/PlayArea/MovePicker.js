@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
-
+import MovesContext from '../../context/MovesContext';
 import rock from '../../images/rock.png';
 import paper from '../../images/paper.png';
 import scissors from '../../images/scissors.jpg';
 import lizard from '../../images/lizard.jpg';
 import spock from '../../images/spock.png';
+
 
 const ButtonList = styled.ul`
     list-style-type: none;
@@ -28,32 +29,11 @@ const urls = {
 };
 
 const MovePicker = ({ onSelect, selected }) => {
-    const options = [
-        {
-        "id": 1,
-        "name": "rock"
-        },
-        {
-        "id": 2,
-        "name": "paper"
-        },
-        {
-        "id": 3,
-        "name": "scissors"
-        },
-        {
-        "id": 4,
-        "name": "lizard"
-        },
-        {
-        "id": 5,
-        "name": "spock"
-        }
-    ];
+    const { moves } = useContext(MovesContext);
 
     return (
         <ButtonList>
-            { options.map(({ id, name }) => <li key={id}><MoveButton src={urls[name]} isSelected={selected === id} onClick={onSelect ? () => onSelect(id) : (() => {})} /></li>)}
+            { moves.map(({ id, name }) => <li key={id}><MoveButton src={urls[name]} isSelected={selected === id} onClick={onSelect ? () => onSelect(id) : (() => {})} /></li>)}
         </ButtonList>
     );
 };

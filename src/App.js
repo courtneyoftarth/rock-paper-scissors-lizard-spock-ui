@@ -1,14 +1,16 @@
 import React from 'react';
-import { GameContextProvider } from './context/GameContext';
+import { PlayContextProvider } from './context/PlayContext';
+import { MovesContextProvider } from './context/MovesContext';
 import Page from './component/Page';
-
 
 function App() {
   return (
     <div className="App">
-      <GameContextProvider>
-        <Page />
-      </GameContextProvider>
+      <MovesContextProvider>
+        <PlayContextProvider>
+          <Page />
+        </PlayContextProvider>
+      </MovesContextProvider>
     </div>
   );
 }
