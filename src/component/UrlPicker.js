@@ -2,9 +2,38 @@ import React, { useContext, useState } from 'react';
 import styled from 'styled-components';
 import UrlContext from '../context/UrlContext';
 
+const sharedStyles = `
+    padding: 10px;
+`;
+
 const Input = styled.input`
-    padding: 5px;
-    width: 150px;
+    ${sharedStyles}
+    border: none;
+    flex-grow: 1;
+`;
+
+const Button = styled.button`
+    ${sharedStyles}
+    background-color: lightgray;
+    box-shadow: none;
+    border: none;
+    color: white;
+    flex-grow: 0;
+    font-weight: bold;
+    width: 75px;
+`;
+
+const InputArea = styled.div`
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 0;
+
+    @media only screen and (min-width: 300px) {
+        flex-direction: row;
+    }
 `;
 
 const UrlPicker = () => {
@@ -13,12 +42,13 @@ const UrlPicker = () => {
 
     const onClick = () => setUrl(value);
     return (
-        <div>
+        <>
             <h2>Game service url</h2>
-            <p>
-                <Input value={value} onChange={setValue}/><button onClick={onClick}>Save</button>
-            </p>
-        </div>
+            <InputArea>
+                <Input value={value} onChange={setValue}/>
+                <Button onClick={onClick}>Save</Button>
+            </InputArea>
+        </>
     );
 };
 
