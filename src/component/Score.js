@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import GameContext from '../context/GameContext';
+import styled from 'styled-components';
+
+const ScoreWrapper = styled.div`
+    text-align: center;
+`;
 
 const Score = () => {
+    const { results } = useContext(GameContext);
+    const wins = results.filter(result => result === "win").length;
+    const ties = results.filter(result => result === "tie").length;
+    const losses = results.filter(result => result === "lose").length;
+    
+    const mostRecentResult = results.length > 0 && results[results.length - 1] || null;
     return (
-        <div>
-            <h2></h2>
-        </div>
+        <ScoreWrapper>
+            <h2>{mostRecentResult && `You ${mostRecentResult}!`}</h2>
+            <p>{`${wins} wins, ${ties} ties, ${losses} losses`} (showing the 10 most recent rounds)</p>
+        </ScoreWrapper>
     );
 };
 
