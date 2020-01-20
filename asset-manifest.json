@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/rpsls/static/js/main.fc9dd697.chunk.js",
+    "main.js.map": "/rpsls/static/js/main.fc9dd697.chunk.js.map",
+    "runtime-main.js": "/rpsls/static/js/runtime-main.fa4752b5.js",
+    "runtime-main.js.map": "/rpsls/static/js/runtime-main.fa4752b5.js.map",
+    "static/js/2.ebeba8e8.chunk.js": "/rpsls/static/js/2.ebeba8e8.chunk.js",
+    "static/js/2.ebeba8e8.chunk.js.map": "/rpsls/static/js/2.ebeba8e8.chunk.js.map",
+    "index.html": "/rpsls/index.html",
+    "precache-manifest.3890892de2f2735245aeb9aa8f0d374a.js": "/rpsls/precache-manifest.3890892de2f2735245aeb9aa8f0d374a.js",
+    "service-worker.js": "/rpsls/service-worker.js",
+    "static/js/2.ebeba8e8.chunk.js.LICENSE": "/rpsls/static/js/2.ebeba8e8.chunk.js.LICENSE",
+    "static/media/lizard.jpg": "/rpsls/static/media/lizard.2a42d61e.jpg",
+    "static/media/paper.png": "/rpsls/static/media/paper.7c607c3d.png",
+    "static/media/rock.png": "/rpsls/static/media/rock.ff826bd1.png",
+    "static/media/scissors.jpg": "/rpsls/static/media/scissors.73c012ea.jpg",
+    "static/media/spock.png": "/rpsls/static/media/spock.524f1a73.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa4752b5.js",
+    "static/js/2.ebeba8e8.chunk.js",
+    "static/js/main.fc9dd697.chunk.js"
+  ]
+}
