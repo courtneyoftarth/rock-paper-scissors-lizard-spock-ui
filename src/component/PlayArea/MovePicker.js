@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import MovesContext from '../../context/MovesContext';
 import rock from '../../images/rock.png';
 import paper from '../../images/paper.png';
 import scissors from '../../images/scissors.jpg';
@@ -30,12 +29,8 @@ const urls = {
     spock
 };
 
-const MovePicker = ({ onSelect, selected }) => {
-    const { moves } = useContext(MovesContext);
-
-    return (
-        moves.map(({ id, name }) => <MoveButton src={urls[name]} alt={name} key={id} isSelected={selected === id} isClickable={!!onSelect} onClick={onSelect ? () => onSelect(id) : (() => {})} />)
-    );
-};
+const MovePicker = ({ moves, onSelect, selected }) => (
+    moves.map(({ id, name }) => <MoveButton src={urls[name]} alt={name} key={id} isSelected={selected === id} isClickable={!!onSelect} onClick={onSelect ? () => onSelect(id) : (() => {})} />)
+);
 
 export default MovePicker;

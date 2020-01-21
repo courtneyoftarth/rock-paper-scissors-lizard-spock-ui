@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import styled from 'styled-components';
 import UrlContext from '../context/UrlContext';
+import ErrorMessage from './ErrorMessage';
 
 const sharedStyles = `
     padding: 10px;
@@ -36,10 +37,6 @@ const InputArea = styled.div`
     }
 `;
 
-const Warning = styled.p`
-    color: red;
-`;
-
 const UrlPicker = () => {
     const { setUrl, url } = useContext(UrlContext);
     const [value, setValue] = useState(url);
@@ -51,7 +48,7 @@ const UrlPicker = () => {
                 <Input value={value} onChange={event => setValue(event.target.value)}/>
                 <Button onClick={() => setUrl(value)}>Save</Button>
             </InputArea>
-            {showWarning && <Warning>Please delete trailing slash from url</Warning>}
+            {showWarning && <ErrorMessage>Please delete trailing slash from url</ErrorMessage>}
         </>
     );
 };

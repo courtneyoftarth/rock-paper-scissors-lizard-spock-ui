@@ -6,16 +6,23 @@ const MovesContext = createContext([]);
 
 export const MovesContextProvider = ({ children }) => {
     const [moves, setMoves] = useState([]);
+    const [error, setError] = useState();
     const { url } = useContext(UrlContext);
 
     useEffect(() => {
         (async () => {
-            const response = await axios.get(`${url}/choices`);
-            setMoves(response.data);
+            setError(null);
+            try {
+                const response = await axios.get(`${url}/choices`);
+                setMoves(response.data);
+            } catch (e) {
+                setError(e);
+            }
         })();
     }, [url]);
 
     const value = {
+        error,
         moves
     };
     return <MovesContext.Provider value={value}>{children}</MovesContext.Provider>;
