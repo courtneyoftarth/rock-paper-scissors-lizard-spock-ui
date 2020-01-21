@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
 import Credits from './Credits';
 import Score from './Score';
 import PlayArea from './PlayArea';
@@ -21,6 +22,9 @@ const Centered = styled.div`
 
 const Page = () => (
     <PageWrapper>
+        <Helmet>
+          <title>RPSLS</title>
+        </Helmet>
         <Centered>
             <h1>Rock Paper Scissors Lizard Spock!</h1>
             <p>Select your move, and see if you can beat the computer! (you probably can)</p>
