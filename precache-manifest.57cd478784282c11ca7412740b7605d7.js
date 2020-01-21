@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be2a68c33fe648e0b50d9a3619bf757a",
+    "revision": "f24e7fd7f0e98c029fc8744b6c8a9f37",
     "url": "/rock-paper-scissors-lizard-spock-ui/index.html"
   },
   {
-    "revision": "da1740982fb115ef6294",
-    "url": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js"
+    "revision": "7edcb8355023599f1ef4",
+    "url": "/rock-paper-scissors-lizard-spock-ui/static/js/2.76cf6111.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js.LICENSE"
+    "url": "/rock-paper-scissors-lizard-spock-ui/static/js/2.76cf6111.chunk.js.LICENSE"
   },
   {
-    "revision": "0849e1fa82163a8f3a30",
-    "url": "/rock-paper-scissors-lizard-spock-ui/static/js/main.8e832134.chunk.js"
+    "revision": "d7ece1dab577e4f8c469",
+    "url": "/rock-paper-scissors-lizard-spock-ui/static/js/main.680de974.chunk.js"
   },
   {
     "revision": "faf367bf8332527893af",

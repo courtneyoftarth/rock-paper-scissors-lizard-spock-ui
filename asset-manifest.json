@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/rock-paper-scissors-lizard-spock-ui/static/js/main.8e832134.chunk.js",
-    "main.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/main.8e832134.chunk.js.map",
+    "main.js": "/rock-paper-scissors-lizard-spock-ui/static/js/main.680de974.chunk.js",
+    "main.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/main.680de974.chunk.js.map",
     "runtime-main.js": "/rock-paper-scissors-lizard-spock-ui/static/js/runtime-main.f7667965.js",
     "runtime-main.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/runtime-main.f7667965.js.map",
-    "static/js/2.8d74e34a.chunk.js": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js",
-    "static/js/2.8d74e34a.chunk.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js.map",
+    "static/js/2.76cf6111.chunk.js": "/rock-paper-scissors-lizard-spock-ui/static/js/2.76cf6111.chunk.js",
+    "static/js/2.76cf6111.chunk.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/2.76cf6111.chunk.js.map",
     "index.html": "/rock-paper-scissors-lizard-spock-ui/index.html",
-    "precache-manifest.480394d34aaeed7fef35d26bf48f46b1.js": "/rock-paper-scissors-lizard-spock-ui/precache-manifest.480394d34aaeed7fef35d26bf48f46b1.js",
+    "precache-manifest.57cd478784282c11ca7412740b7605d7.js": "/rock-paper-scissors-lizard-spock-ui/precache-manifest.57cd478784282c11ca7412740b7605d7.js",
     "service-worker.js": "/rock-paper-scissors-lizard-spock-ui/service-worker.js",
-    "static/js/2.8d74e34a.chunk.js.LICENSE": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js.LICENSE",
+    "static/js/2.76cf6111.chunk.js.LICENSE": "/rock-paper-scissors-lizard-spock-ui/static/js/2.76cf6111.chunk.js.LICENSE",
     "static/media/lizard.jpg": "/rock-paper-scissors-lizard-spock-ui/static/media/lizard.2a42d61e.jpg",
     "static/media/paper.png": "/rock-paper-scissors-lizard-spock-ui/static/media/paper.7c607c3d.png",
     "static/media/rock.png": "/rock-paper-scissors-lizard-spock-ui/static/media/rock.ff826bd1.png",
@@ -18,7 +18,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f7667965.js",
-    "static/js/2.8d74e34a.chunk.js",
-    "static/js/main.8e832134.chunk.js"
+    "static/js/2.76cf6111.chunk.js",
+    "static/js/main.680de974.chunk.js"
   ]
 }
