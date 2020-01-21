@@ -12,41 +12,35 @@ exports[`Credits renders successfully 1`] = `
         <a
           href="https://www.istockphoto.com/vector/friendly-green-iguana-in-flat-style-vector-gm862153016-142888289"
         >
-          Lizard
+          lizard
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.pinclipart.com/pindetail/Txmmx_counseling-clipart-student-meeting-paper-black-and-white/"
+        >
+          paper
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://clipartart.com/categories/rock-clipart-free.html"
+        >
+          rock
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://www.clipartpanda.com/clipart_images/scissors-clipart-5181114"
+        >
+          scissors
         </a>
       </li>
       <li>
         <a
           href="https://www.pinclipart.com/pindetail/ohwhox_star-trek-spock-fallout-star-trek-spock-fallout/"
         >
-          Spock
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
-exports[`shows correct wins 1`] = `
-<div>
-  <div>
-    <h2>
-      Credits
-    </h2>
-    Pictures taken from
-    <ul>
-      <li>
-        <a
-          href="https://www.istockphoto.com/vector/friendly-green-iguana-in-flat-style-vector-gm862153016-142888289"
-        >
-          Lizard
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.pinclipart.com/pindetail/ohwhox_star-trek-spock-fallout-star-trek-spock-fallout/"
-        >
-          Spock
+          spock
         </a>
       </li>
     </ul>
