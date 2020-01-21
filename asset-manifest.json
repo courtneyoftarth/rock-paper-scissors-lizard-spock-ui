@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/rpsls/static/js/main.fc9dd697.chunk.js",
-    "main.js.map": "/rpsls/static/js/main.fc9dd697.chunk.js.map",
-    "runtime-main.js": "/rpsls/static/js/runtime-main.fa4752b5.js",
-    "runtime-main.js.map": "/rpsls/static/js/runtime-main.fa4752b5.js.map",
-    "static/js/2.ebeba8e8.chunk.js": "/rpsls/static/js/2.ebeba8e8.chunk.js",
-    "static/js/2.ebeba8e8.chunk.js.map": "/rpsls/static/js/2.ebeba8e8.chunk.js.map",
-    "index.html": "/rpsls/index.html",
-    "precache-manifest.3890892de2f2735245aeb9aa8f0d374a.js": "/rpsls/precache-manifest.3890892de2f2735245aeb9aa8f0d374a.js",
-    "service-worker.js": "/rpsls/service-worker.js",
-    "static/js/2.ebeba8e8.chunk.js.LICENSE": "/rpsls/static/js/2.ebeba8e8.chunk.js.LICENSE",
-    "static/media/lizard.jpg": "/rpsls/static/media/lizard.2a42d61e.jpg",
-    "static/media/paper.png": "/rpsls/static/media/paper.7c607c3d.png",
-    "static/media/rock.png": "/rpsls/static/media/rock.ff826bd1.png",
-    "static/media/scissors.jpg": "/rpsls/static/media/scissors.73c012ea.jpg",
-    "static/media/spock.png": "/rpsls/static/media/spock.524f1a73.png"
+    "main.js": "/rock-paper-scissors-lizard-spock-ui/static/js/main.8e832134.chunk.js",
+    "main.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/main.8e832134.chunk.js.map",
+    "runtime-main.js": "/rock-paper-scissors-lizard-spock-ui/static/js/runtime-main.f7667965.js",
+    "runtime-main.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/runtime-main.f7667965.js.map",
+    "static/js/2.8d74e34a.chunk.js": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js",
+    "static/js/2.8d74e34a.chunk.js.map": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js.map",
+    "index.html": "/rock-paper-scissors-lizard-spock-ui/index.html",
+    "precache-manifest.480394d34aaeed7fef35d26bf48f46b1.js": "/rock-paper-scissors-lizard-spock-ui/precache-manifest.480394d34aaeed7fef35d26bf48f46b1.js",
+    "service-worker.js": "/rock-paper-scissors-lizard-spock-ui/service-worker.js",
+    "static/js/2.8d74e34a.chunk.js.LICENSE": "/rock-paper-scissors-lizard-spock-ui/static/js/2.8d74e34a.chunk.js.LICENSE",
+    "static/media/lizard.jpg": "/rock-paper-scissors-lizard-spock-ui/static/media/lizard.2a42d61e.jpg",
+    "static/media/paper.png": "/rock-paper-scissors-lizard-spock-ui/static/media/paper.7c607c3d.png",
+    "static/media/rock.png": "/rock-paper-scissors-lizard-spock-ui/static/media/rock.ff826bd1.png",
+    "static/media/scissors.jpg": "/rock-paper-scissors-lizard-spock-ui/static/media/scissors.73c012ea.jpg",
+    "static/media/spock.png": "/rock-paper-scissors-lizard-spock-ui/static/media/spock.524f1a73.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fa4752b5.js",
-    "static/js/2.ebeba8e8.chunk.js",
-    "static/js/main.fc9dd697.chunk.js"
+    "static/js/runtime-main.f7667965.js",
+    "static/js/2.8d74e34a.chunk.js",
+    "static/js/main.8e832134.chunk.js"
   ]
 }
