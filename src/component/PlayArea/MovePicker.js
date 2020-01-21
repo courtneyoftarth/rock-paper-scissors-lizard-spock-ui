@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import rock from '../../images/rock.png';
 import paper from '../../images/paper.png';
@@ -32,5 +33,19 @@ const urls = {
 const MovePicker = ({ moves, onSelect, selected }) => (
     moves.map(({ id, name }) => <MoveButton src={urls[name]} alt={name} key={id} isSelected={selected === id} isClickable={!!onSelect} onClick={onSelect ? () => onSelect(id) : (() => {})} />)
 );
+
+MovePicker.propTypes = {
+    moves: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string
+    })).isRequired,
+    onSelect: PropTypes.func,
+    selected: PropTypes.bool
+};
+
+MovePicker.defaultProps = {
+    onSelect: null,
+    selected: null
+};
 
 export default MovePicker;
