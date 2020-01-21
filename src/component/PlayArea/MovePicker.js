@@ -34,7 +34,7 @@ const MovePicker = ({ onSelect, selected }) => {
     const { moves } = useContext(MovesContext);
 
     return (
-        moves.map(({ id, name }) => <MoveButton src={urls[name]} key={id} isSelected={selected === id} isClickable={!!onSelect} onClick={onSelect ? () => onSelect(id) : (() => {})} />)
+        moves.map(({ id, name }) => <MoveButton src={urls[name]} alt={name} key={id} isSelected={selected === id} isClickable={!!onSelect} onClick={onSelect ? () => onSelect(id) : (() => {})} />)
     );
 };
 
