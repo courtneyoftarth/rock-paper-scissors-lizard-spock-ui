@@ -17,7 +17,7 @@ const Score = () => {
     const ties = results.filter(result => result === "tie").length;
     const losses = results.filter(result => result === "lose").length;
     
-    const mostRecentResult = results.length > 0 && results[results.length - 1] || null;
+    const mostRecentResult = results.length > 0 && results[results.length - 1];
     return (
         <ScoreWrapper>
             <h2>{mostRecentResult && `You ${mostRecentResult}!`}</h2>
