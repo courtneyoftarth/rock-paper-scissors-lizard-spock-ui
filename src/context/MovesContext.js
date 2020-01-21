@@ -13,7 +13,7 @@ export const MovesContextProvider = ({ children }) => {
             const response = await axios.get(`${url}/choices`);
             setMoves(response.data);
         })();
-    }, []);
+    }, [url]);
 
     const value = {
         moves
