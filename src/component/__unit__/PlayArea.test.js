@@ -56,3 +56,21 @@ test('selects correct images', () => {
     fireEvent.click(playerButton);
     expect(playContext.onMoveSelected).toBeCalledWith(TEST_MOVE.id);
 });
+
+test('shows an error if moves couldnt be fetched', () => {
+    const movesContext = {
+        error: new Error('404')
+    };
+    const { getByText } = renderWithMockContext({ movesContext });
+
+    expect(getByText(/There was an error/)).toBeInTheDocument();
+});
+
+test('hides error message if there is no error', () => {
+    const movesContext = {
+        moves: []
+    };
+    const { queryByText } = renderWithMockContext({ movesContext });
+
+    expect(queryByText(/There was an error/)).toBeNull();
+});

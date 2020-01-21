@@ -15,7 +15,7 @@ test('requests data correctly', async () => {
                 <MovesContext.Consumer>
                     {value => {
                         contextValue = value;
-                        return null;
+                        return JSON.stringify(value);
                     }}
                 </MovesContext.Consumer>
             </MovesContextProvider>
@@ -36,7 +36,7 @@ test('returns correct data', async () => {
             <MovesContext.Consumer>
                 {value => {
                     contextValue = value;
-                    return contextValue.moves;
+                    return JSON.stringify(value);
                 }}
             </MovesContext.Consumer>
         </MovesContextProvider>
@@ -45,4 +45,25 @@ test('returns correct data', async () => {
     await waitForDomChange({ container });
 
     await wait(expect(contextValue.moves).toEqual(moves));
+});
+
+test('returns errors', async () => {
+    const error = "Bad stuff!";
+    axios.get = jest.fn().mockRejectedValue(error);
+
+    let contextValue = null;
+    const { container } = render(
+        <MovesContextProvider>
+            <MovesContext.Consumer>
+                {value => {
+                    contextValue = value;
+                    return JSON.stringify(value);
+                }}
+            </MovesContext.Consumer>
+        </MovesContextProvider>
+    );
+
+    await waitForDomChange({ container });
+
+    await wait(expect(contextValue.error).toEqual(error));
 });
