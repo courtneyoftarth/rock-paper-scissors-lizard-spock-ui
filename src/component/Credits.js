@@ -14,7 +14,7 @@ const Credits = () => (
         Pictures taken from
         <ul>
             {
-                Object.keys(sources).map(move => <li><a href={sources[move]}>{move}</a></li>)
+                Object.keys(sources).map(move => <li key={move}><a href={sources[move]}>{move}</a></li>)
             }
         </ul>
     </div>
