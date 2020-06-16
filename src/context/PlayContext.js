@@ -3,9 +3,17 @@ import axios from 'axios';
 import UrlContext from './UrlContext';
 
 const PlayContext = createContext({
+    // ID of the computer's most recent move
     computerMove: null,
+
+    // Function that takes the ID of the player's next move, then updates the computer move and results
     onMoveSelected: () => {},
-    playerMove: null
+
+    // ID of the player's most recent move
+    playerMove: null,
+
+    // Array of up to 10 most recent round results
+    results: []
 });
 
 export const PlayContextProvider = ({ children }) => {
